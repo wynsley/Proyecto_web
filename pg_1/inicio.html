@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>ScoreLog</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScoreLog</title>
+  <link rel="stylesheet" href="/pg_1/public/css/inicio.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <h2>ScoreLog</h2>
+    
+    <section class="section">
+        <h1 class="section__title"> ScoreLog</h1>
+        <div class="wrapper">
+            <!--Formulario de inicio de sesión---------------------------->
+            <div class="form-wrapper sign-in">
+                <form action="" method="post">
+                    <h2>Login</h2>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="passwd" required>
+                        <label for="passwd">Contraseña</label>
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox"> Recordar contraseña</label>
+                    </div>
+                    <button type="submit">Iniciar Sesión</button>
+                    <div class="signUp-link">
+                        <p>¿No tienes una cuenta? <a href="#" class="signUpBtn-link">Registrate</a></p>
+                    </div>
+                </form>
+            </div>
+    
+            <!--Formulario de registro------------------------------------->
+            <div class="form-wrapper sign-up">
+                <form action="" method="post">
+                    <h2>Registrate</h2>
+                    <div class="input-group">
+                        <input type="text" name="nombre">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="passwdR" required>
+                        <label for="passwdR">Contraseña</label>
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox"> Aceptar tèrminos y condiciones</label>
+                    </div>
+                    <button type="submit">Registrarse</button>
+                    <div class="signUp-link">
+                        <p>¿Ya tienes una cuenta? <a href="#" class="signInBtn-link">Iniciar Sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <a href="#" class="section__omit">Omitir inicio de Sesión</a>
+    </section>
+  
+
+  <script src="/pg_1/public/js/script.js"></script>
 </body>
 </html>
