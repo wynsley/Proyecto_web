@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScoreLog</title>
+  <link rel="stylesheet" href="/pág. 5/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">ScoreLog</h1>
+      <nav class="nav">
+        <button class="nav__btn" id="btn-grupos">Grupos</button>
+        <button class="nav__btn" id="btn-reportes">Reportes</button>
+      </nav>
+    </header>
+    <section class="actions">
+      <button class="actions__btn" id="btn-exportar">Exportar resultados</button>
+      <button class="actions__btn" id="btn-calificar-todos">Calificar a todos</button>
+      <button class="actions__btn" id="btn-agregar-miembro">Agregar miembro</button>
+    </section>
+    <section class="table-section">
+      <div class="table-responsive">
+        <table class="score-table" id="score-table">
+          <thead>
+            <tr>
+              <th>Apellidos y Nombres</th>
+              <th>Puntos</th>
+              <th class="th-acciones"><div>Acciones</div></th>
+            </tr>
+          </thead>
+          <tbody id="score-tbody">
+            <!-- Filas generadas por JS -->
+          </tbody>
+        </table>
+      </div>
+      <div id="empty-table-msg" class="empty-msg" style="display:none;">No hay miembros registrados.</div>
+    </section>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__content" id="modal-content"></div>
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+  </div>
+
+  <script src="/pág. 5/js/main.js"></script>
+</body>
+</html>
