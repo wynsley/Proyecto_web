@@ -57,7 +57,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
-aside, .fila-button_text.button, button.fila-button_text {
+aside, .fila-button_text.button, a.fila-button_text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,7 @@ aside, .fila-button_text.button, button.fila-button_text {
     transition: background 0.2s, box-shadow 0.2s;
 }
 
-a.fila-button_text:active, button.fila-button_text:focus {
+a.fila-button_text:active, a.fila-button_text:focus {
     outline: 2px solid var(--color-titulo);
     box-shadow: 0 6px 10px rgba(0,0,0,0.22);
 }
