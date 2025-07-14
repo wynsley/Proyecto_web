@@ -34,11 +34,11 @@ function agregarGrupo(nombre, cantidad) {
   fila.classList.add("table-row");
 
   fila.innerHTML = `
-    <div>${nombre}</div>
-    <div>${cantidad}</div>
+    <div class="group-text">${nombre}</div>
+    <div class="group-text">${cantidad}</div>
     <div class="group-actions">
-      <button onclick="evaluarGrupo('${nombre}')">Evaluar</button>
-      <button onclick="generarReporte('${nombre}')">Generar reportes</button>
+      <button class="btnAction" onclick="evaluarGrupo('${nombre}')">Evaluar</button>
+      <button class="btnAction" onclick="generarReporte('${nombre}')">Generar reportes</button>
     </div>
   `;
 

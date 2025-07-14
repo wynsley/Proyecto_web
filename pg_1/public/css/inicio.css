@@ -13,8 +13,13 @@
 }
 body {
   min-height: 100vh;
-  background: var(--color-fondo);
-}
+
+  background: linear-gradient(135deg,#1ec2d7d4,
+  #3bc4e270,
+  #4181e7be, 
+  #59f2fde3);
+
+}   
 
 .section{
     display: flex;

@@ -14,16 +14,22 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: var(--color-fondo);
+  background: linear-gradient(45deg var(--color-fondo), rgb(12, 80, 180)) ;
   margin: 0;
   padding: 2rem;
+  background: linear-gradient(135deg,#1ec2d7d4,
+  #3bc4e270,
+  #3c97ff75, 
+  #59f2fde3);
 }
 
 .section{
   padding: 5% 14% 5% 14%;
+  height: 90vh;
+  max-width: 100%;
 }
 .app-container {
-  background: radial-gradient(rgb(201, 255, 243), rgba(227, 233, 235, 0.778));
+  background: radial-gradient(rgb(201, 255, 243), rgba(150, 214, 236, 0.778));
   border-radius: 10px;
   padding: 1.5rem;
   width: 100%;
@@ -34,14 +40,15 @@ body {
 .top-bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
 }
 
 h1 {
   font-family: "Georgia", serif;
-  font-size: 1.8rem;
-  color: #3a3a3a;
+  font-size: 2rem;
+  color:var(--color-titulo);
   margin: 0;
+  text-shadow: 0 0 5px rgb(102, 255, 255);
 }
 
 .top-buttons {
@@ -50,25 +57,34 @@ h1 {
 }
 
 button {
-  padding: 8px 12px;
+  padding: 10px 15px;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(to right, #f1f1f1, #e0e0ff);
+  background: linear-gradient(150deg,#EBFFEE, rgb(201, 255, 243), #EBFFEE);
   cursor: pointer;
   font-weight: bold;
+  box-shadow: 2px 2px 3px rgb(0, 238, 255);
 }
 
 .divider {
-  margin: 20px 0 10px;
+  margin: 0.6rem 0 10px;
   border: none;
-  border-top: 1px solid #aaa;
-  height: 1px;
+  border-top:  2px solid #aaa;
+  height: 3px;
 }
 
-.crearGrupo{
-  display: block;
+.Content-btn{
+  display: grid;
   justify-content: right;
   align-items: center;
+  
+}
+.crearGrupo{
+  padding: .6rem 2.3rem;
+  box-shadow: 2px 2px 3px blueviolet;
+  right: 0;
+
+
 }
 
 /* Tabla */
@@ -86,14 +102,16 @@ button {
 }
 
 .table-header {
-  background-color: #d7e3ee;
+  background: linear-gradient(150deg,#609af0bc, rgba(33, 160, 186, 0.579), #609af0bc);
+  cursor: pointer;
   font-weight: bold;
   border-radius: 6px;
+ 
 }
 
 .table-row:not(.table-header) {
-  background: #e0f0f8;
-  border: 1px solid #cde;
+  background: #ffffff;
+  border: 1px solid rgb(182, 219, 255);
   border-radius: 6px;
   margin-top: 5px;
 }
@@ -104,11 +122,21 @@ button {
 }
 
 /* Acciones */
+.group-text{
+  color: blueviolet;
+  font-weight: 700;
+} 
 .group-actions {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: right;
+  gap: 4rem;
+
 }
+.btnAction{
+  box-shadow: 2px 2px 3px blueviolet;
+}
+
+
 
 /* Modal */
 .modal {
@@ -121,23 +149,26 @@ button {
 }
 
 .modal-content {
-  background: white;
+  background: repeating-radial-gradient( rgb(169, 220, 207), rgb(199, 230, 253), rgb(226, 253, 255));
   margin: 10% auto;
   padding: 20px;
   border-radius: 10px;
   width: 90%;
   max-width: 400px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(68, 255, 0, 0.886);
+
 }
 
 .modal-content h2 {
   margin-top: 0;
+  text-align: center;
 }
 
 .modal-content label {
   display: block;
   margin-top: 10px;
   font-weight: bold;
+  
 }
 
 .modal-content input {
@@ -146,6 +177,7 @@ button {
   margin-top: 5px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  border: 1px solid rgba(68, 255, 0, 0.886);
 }
 
 .modal-buttons {

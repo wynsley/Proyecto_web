@@ -15,10 +15,13 @@
             <button onclick="mostrarReportes()">Reportes</button>
           </div>
         </div>
-    
-        <hr class="divider">
-        <button class="crearGrupo" onclick="abrirModal()">Crear grupo</button>
-    
+      </div>
+      <hr class="divider">
+      <div class="Content-btn">
+         <button class="crearGrupo" onclick="abrirModal()">Crear grupo</button>
+      </div>
+     
+      <div>
         <!-- Cabecera de tabla -->
         <div class="table">
           <div class="table-row table-header">
@@ -32,6 +35,7 @@
           </div>
         </div>
       </div>
+        
     </section>
   
 
@@ -40,7 +44,7 @@
     <div class="modal-content">
       <h2>Crear nuevo grupo</h2>
       <label for="nombreGrupo">Nombre del grupo:</label>
-      <input type="text" id="nombreGrupo" placeholder="Ej: Computación I">
+      <input type="text" id="nombreGrupo" placeholder="Ej: Computación III">
 
       <label for="miembrosGrupo">Cantidad de miembros:</label>
       <input type="number" id="miembrosGrupo" placeholder="Ej: 12" min="1">
